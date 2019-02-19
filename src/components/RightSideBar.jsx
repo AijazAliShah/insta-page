@@ -5,6 +5,7 @@ import '../App.css';
 //const profile_pic = require('../img/profile_pic.png');
 const pic1 = require('../img/pic1.jpg');
 
+
 class RightSideBar extends Component {
   render() {
     return (

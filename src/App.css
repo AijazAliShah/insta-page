@@ -35,7 +35,13 @@
   align-items: center
 }
 
-
+.leftSidebar1 {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white
+}
 
 .table td, .table th {
   border: none;
