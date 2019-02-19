@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  flex: 3;
+  display: flex;
+  flex-direction: horizontal;
+  justify-content: space-between;
+}
+.start {
+   flex:4
+
+}
+.middle {
+  flex: 2;
+  display: flex;
+  flex-direction: horizontal;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.end {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.leftSidebar {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.borderless td, .borderless th {
+  border: none;
+}
+
+.bodyContainer {
+  display: flex;
+  flex-direction: horizontal;
+}
+.rightContainer {
+  flex:1;
+}
+
+.mainContainer {
+  flex: 4;
+}
+
+.leftContainer {
+  flex:1;
+}
