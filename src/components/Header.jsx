@@ -15,7 +15,7 @@ class header extends Component {
   render() {
     return (
        
-      <Navbar bg="light" expand="lg" className="header">
+      <Navbar bg="light" expand="lg" className="header" margin="30px">
         
        <div className="logo">
         <Navbar.Brand href="#home">
@@ -73,7 +73,9 @@ class header extends Component {
             />
         </div>
         <div className="end">
-          <NavDropdown inline className="dropDown"
+          <NavDropdown alignRight
+            title="Dropdown right"
+            inline className="dropDown"
                 title={
     
                         <img className="thumbnail-image" 

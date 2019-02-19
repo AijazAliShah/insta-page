@@ -19,7 +19,6 @@ class RightSideBar extends Component {
                     <span><b>882</b> Photos </span> &nbsp; <span> <b>527k</b> Followers </span>
                 </div>
                 <br/>
-                <br/>
                 <div>
                     <p>asjhdas djsda sksad ajshdjhasd ajsdhjhasd asdjhajshd ajshdjasdg sagdkhsagd mashdgksa ahsgdags</p>
                     <p>asjhdas djsda sksad ajshdjhasd ajsdhjhasd asdjhajshd ajshdjasdg sagdkhsagd mashdgksa ahsgdags</p>

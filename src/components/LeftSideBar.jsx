@@ -2,8 +2,14 @@ import React, { Component } from 'react';
 import {Image, Table} from 'react-bootstrap/';
 import '../App.css';
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faHashtag,faCompass, faCheckCircle,faUser, faBell, faPaperPlane,faChartPie, faCog  } from '@fortawesome/free-solid-svg-icons';
+
 const pic1 = require('../img/pic1.jpg');
 const explore = require('../img/explore.jpg');
+
+//library.add(faHome, faEnvelope, faKey );
 
 
 class LeftSideBar extends Component {
@@ -44,23 +50,24 @@ class LeftSideBar extends Component {
             </div>  
 
             <div className="leftSidebar1">
-                 <a href="#">Feed</a>
+            
+                 <a href="#home" color="white"><FontAwesomeIcon icon={faHome} /> Feed</a>
                  <br/>
-                 <a href="#">Explore</a>
+                 <a href="#home"><FontAwesomeIcon icon={faCompass} /> Explore</a>
                  <br/>
-                 <a href="#">Trending tags</a>
+                 <a href="#home"><FontAwesomeIcon icon={faHashtag} /> Trending tags</a>
                  <br/>
-                 <a href="#">Top Post</a>
+                 <a href="#home"><FontAwesomeIcon icon={faCheckCircle} /> Top Post</a>
                  <br/>
-                 <a href="#">People</a>
+                 <a href="#home"><FontAwesomeIcon icon={faUser} /> People</a>
                  <br/>
-                 <a href="#">Notification</a>
+                 <a href="#home"><FontAwesomeIcon icon={faBell} /> Notification</a>
                  <br/>
-                 <a href="#">Direct</a>
+                 <a href="#home"><FontAwesomeIcon icon={faPaperPlane} /> Direct</a>
                  <br/>
-                 <a href="#"> Stats</a>
+                 <a href="#home"><FontAwesomeIcon icon={faChartPie} /> Stats</a>
                  <br/>
-                 <a href="#">Settings</a>
+                 <a href="#home"><FontAwesomeIcon icon={faCog} /> Settings</a>
             </div>
       </div>
     )
