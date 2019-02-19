@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Image, Table} from 'react-bootstrap/';
+import {Image} from 'react-bootstrap/';
 import '../App.css';
 
 //const profile_pic = require('../img/profile_pic.png');
@@ -8,33 +8,39 @@ const pic1 = require('../img/pic1.jpg');
 class RightSideBar extends Component {
   render() {
     return (
-      <div className="block-example border border-dark">
-        <Image src={pic1}/>
+      <div>
+        <Image src={pic1} width="100%" height="100%"/>
             <br/>
-            <p> 
-                <h4><b>Banjaman Hardman</b></h4>
-                <p><b>882</b> Photos &nbsp; <b>527k</b>Followers </p>
-                <br/>
-                <br/>
-                <p>asjhdas djsda sksad ajshdjhasd ajsdhjhasd asdjhajshd ajshdjasdg sagdkhsagd mashdgksa ahsgdags</p>
-                <Table className="borderless">
+            <div display="flex" align-item="center"> 
                 
-                <tbody>
-                    <tr>
-                        <td><b>Post</b></td>
-                        <td><b>Followers</b></td>
-                        <td><b>Following</b></td>                         
-                    </tr>
+                <div>
+                    <h4><b>Banjaman Hardman</b></h4>
+                    <span><b>882</b> Photos </span> &nbsp; <span> <b>527k</b> Followers </span>
+                </div>
+                <br/>
+                <br/>
+                <div>
+                    <p>asjhdas djsda sksad ajshdjhasd ajsdhjhasd asdjhajshd ajshdjasdg sagdkhsagd mashdgksa ahsgdags</p>
+                    <p>asjhdas djsda sksad ajshdjhasd ajsdhjhasd asdjhajshd ajshdjasdg sagdkhsagd mashdgksa ahsgdags</p>
+                </div>
+                
+                
+                 <div>
+                     <div>
+                         <p><b>locations</b></p>
+                        <p>based in iceland</p>      
+                    </div>
+                    <div>
+                        <p><b>profession</b></p>
+                        <p>programmer</p>    
+                    </div>
                     
-                    <tr>
-                        <td>100</td>
-                        <td>21m</td>
-                        <td>2m</td>
-                    </tr>
-                    
-                </tbody>
-                </Table>
-            </p>          
+                    <div>
+                        <p><b>profession</b></p>
+                        <p>photographer</p>
+                    </div>
+                 </div>    
+            </div>      
       </div>
     )
   }

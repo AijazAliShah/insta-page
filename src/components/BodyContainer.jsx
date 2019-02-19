@@ -8,8 +8,13 @@ class BodyContainer extends Component {
   render() {
     return (
       <div className="bodyContainer">
-        
-         <RightSideBar className="RightContainer"/>
+      
+        <div className="lefContainer" ><LeftSideBar/></div>
+          
+        <div className="mainContainer"><MainBody/></div>
+          
+        <div className="rightContainer" ><RightSideBar/></div>
+          
       </div>
     )
   }

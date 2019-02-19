@@ -67,7 +67,7 @@ class header extends Component {
             <img
               src={heart}
               width="10%"
-              height="8%"
+              height="9%"
               className="d-inline-block align-top"
               alt="intsa logo"
             />

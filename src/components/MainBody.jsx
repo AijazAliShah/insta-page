@@ -1,9 +1,11 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import {Image} from 'react-bootstrap/';
+const pic2 = require('../img/pic2.jpg');
 
 class MainBody extends Component {
   render() {
     return (
-      <div className="block-example border border-dark">
+      <div >
         
       </div>
     )
