@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Navbar, NavDropdown, Nav, Form, FormControl } from "react-bootstrap";
+import { Navbar, NavDropdown, Nav, Form, FormControl, Image } from "react-bootstrap";
 
 import "../App.css";
 
 const logo = require("../img/instagram.png");
 const mic = require("../img/mic.png");
-const profile_pic = require("../img/profile_pic.png");
 const envolop = require("../img/envolop.png");
 const heart = require("../img/heart.png");
 
@@ -80,9 +79,10 @@ class header extends Component {
             alignRight
             className="dropDown"
             title={
-              <img
+              <Image
+                roundedCircle
                 className="thumbnail-image"
-                src={profile_pic}
+                src={this.props.profilePic}
                 alt="user pic"
                 width="30"
                 height="30"

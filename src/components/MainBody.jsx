@@ -12,6 +12,7 @@ class MainBody extends Component {
           <FeaturedStories
             leftData="Featured Stories"
             rightData="Popular Stories"
+            pics={this.props.userData.pics}
           />
         </div>
 
@@ -27,6 +28,7 @@ class MainBody extends Component {
                 <FontAwesomeIcon icon={faThLarge} />
               </div>
             }
+            pics={this.props.userData.pics}
           />
         </div>
       </div>

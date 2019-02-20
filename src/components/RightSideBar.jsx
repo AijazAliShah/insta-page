@@ -2,38 +2,34 @@ import React, { Component } from "react";
 import { Image } from "react-bootstrap/";
 import "../App.css";
 
-//const profile_pic = require('../img/profile_pic.png');
-const pic1 = require("../img/pic1.jpg");
 
 class RightSideBar extends Component {
   render() {
     return (
       <div className="colorGray">
-        <Image src={pic1} width="100%" height="100%" />
+        <Image src={this.props.userData.userDetails.picture} width="100%" height="100%" />
         <br />
         <div display="flex" align-item="center">
           <br />
           <div>
             <h4 className="colorBlack">
-              <b>Banjaman Hardman</b>
+              <b>{this.props.userData.userDetails.name}</b>
             </h4>
             <span>
-              <b className="colorBlack">882</b> Photos
+              <b className="colorBlack">{this.props.userData.userDetails.noOfPosts}</b> Photos
             </span>
             &nbsp;
             <span>
-              <b className="colorBlack">527k</b> Followers
+              <b className="colorBlack">{this.props.userData.userDetails.noOfFollowers}</b> Followers
             </span>
           </div>
           <br />
           <div>
             <p>
-              asjhdas djsda sksad ajshdjhasd ajsdhjhasd asdjhajshd ajshdjasdg
-              sagdkhsagd mashdgksa ahsgdags
+               {this.props.userData.userDetails.details}
             </p>
             <p>
-              asjhdas djsda sksad ajshdjhasd ajsdhjhasd asdjhajshd ajshdjasdg
-              sagdkhsagd mashdgksa ahsgdags
+              {this.props.userData.userDetails.details}
             </p>
           </div>
 
@@ -42,20 +38,20 @@ class RightSideBar extends Component {
               <p className="colorBlack">
                 <b>locations</b>
               </p>
-              <p>based in iceland</p>
+              <p>{this.props.userData.userDetails.address}</p>
             </div>
             <div>
               <p className="colorBlack">
                 <b>profession</b>
               </p>
-              <p>programmer</p>
+              <p>{this.props.userData.userDetails.profession}</p>
             </div>
 
             <div>
               <p className="colorBlack">
                 <b>profession</b>
               </p>
-              <p>photographer</p>
+              <p>{this.props.userData.userDetails.profession}</p>
             </div>
           </div>
         </div>

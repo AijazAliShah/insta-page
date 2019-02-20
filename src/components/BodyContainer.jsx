@@ -9,15 +9,15 @@ class BodyContainer extends Component {
     return (
       <div className="bodyContainer">
         <div className="lefContainer">
-          <LeftSideBar />
+          <LeftSideBar userData={this.props.userData}/>
         </div>
 
         <div className="mainContainer">
-          <MainBody />
+          <MainBody userData={this.props.userData}/>
         </div>
 
         <div className="rightContainer">
-          <RightSideBar />
+          <RightSideBar userData={this.props.userData}/>
         </div>
       </div>
     );
