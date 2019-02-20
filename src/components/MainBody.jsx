@@ -5,9 +5,14 @@ import LatestFeed from './LatestFeed';
 class MainBody extends Component {
   render() {
     return (
-      <div >
-        <FeaturedStories />
-        <LatestFeed />
+      <div className="mainBody">
+        <div className="featuredStories">
+          <FeaturedStories />
+        </div> 
+        <br/>
+        <div className="LatestFeed">
+              <LatestFeed />
+        </div>   
       </div>
     )
   }

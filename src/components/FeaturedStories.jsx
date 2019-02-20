@@ -1,22 +1,35 @@
 import React, { Component } from 'react';
-import {Container, Row, Col} from 'react-bootstrap';
+import {Container, Row, Col, Image} from 'react-bootstrap';
 
+const pic2 = require('../img/pic2.jpg');
+const pic3 = require('../img/pic3.JPG');
+const pic4 = require('../img/pic4.jpeg');
+const pic5 = require('../img/pic5.jpg');
 
 class FeaturedStories extends Component {
   render() {
     return (
       <div>
+
+        <div>
         <Container>
+        <Row>
+          <Col lg>
+            <div className="d-flex justify-content-between">
+              <h3>Featured Stories</h3>
+              <h6>Popular Stories</h6>
+            </div>
+          </Col>
+        </Row>
             <Row>
-                <Col sm={8}>sm=8</Col>
-                <Col sm={4}>sm=4</Col>
+                <Col lg><Image src={pic2} width="100%" height="100%"/></Col>
+                <Col lg><Image src={pic3} width="100%" height="100%"/></Col>
+                <Col lg><Image src={pic4} width="100%" height="100%"/></Col>
+                <Col lg><Image src={pic5} width="100%" height="100%"/></Col>
             </Row>
-            <Row>
-                <Col sm>sm=true</Col>
-                <Col sm>sm=true</Col>
-                <Col sm>sm=true</Col>
-            </Row>
-        </Container>;
+        </Container>
+        </div>
+
       </div>
     )
   }

@@ -53,7 +53,7 @@
 .bodyContainer {
   display: flex;
   flex-direction: horizontal;
-  margin: 30px;
+  margin: 1%;
 }
 .rightContainer {
   width: 15%;
@@ -65,4 +65,28 @@
 
 .leftContainer {
   width: 15%;
+}
+
+.mainBody {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+featuredStories {
+  flex: 1
+}
+
+latestFeed {
+  flex:1
+}
+
+.a {
+  color:gray;
+}
+
+a:hover {
+  color: #e75480;
+  text-decoration: none;
 }

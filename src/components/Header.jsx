@@ -15,7 +15,7 @@ class header extends Component {
   render() {
     return (
        
-      <Navbar bg="light" expand="lg" className="header" margin="30px">
+      <Navbar bg="light" expand="lg" className="header" margin="1%">
         
        <div className="logo">
         <Navbar.Brand href="#home">
@@ -38,8 +38,8 @@ class header extends Component {
                             height="90%"  />
                           <img
                             src={mic}
-                            width="4%"
-                            height="35%"
+                            width="3%"
+                            height="50%"
                             className="d-inline-block align-top"
                             alt="mic"
                           />
@@ -52,6 +52,8 @@ class header extends Component {
 
         <div className="middle">
             <button 
+              width="10%"
+              height="6%"
               type="button"
               className="btn btn-danger">
                 + Create New Post
@@ -74,8 +76,7 @@ class header extends Component {
         </div>
         <div className="end">
           <NavDropdown alignRight
-            title="Dropdown right"
-            inline className="dropDown"
+             className="dropDown"
                 title={
     
                         <img className="thumbnail-image" 
