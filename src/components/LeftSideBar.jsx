@@ -9,12 +9,36 @@ const pic1 = require('../img/pic1.jpg');
 
 
 class LeftSideBar extends Component {
-  render() {
+
+//     renderLinks = () => {
+//         pics.map((pic) =>{
+//             <div>
+//                 <a href="#home" color="a" className="a"><FontAwesomeIcon icon={faHome} /> Feed</a>
+//                 <br/>
+//             </div>
+//         }
+//   );
+//     }
+
+    render() {
+
+    const linkData = [
+        {link: "#feed" , icon: faHome, text: "feed"},
+        {link: "#Explore" , icon: faCompass, text: "Explore"},
+        {link: "#trending_tag" , icon: faHashtag, text: "Trending Tag"},
+        {link: "#top_post" , icon: faCheckCircle, text: "Top Post"},
+        {link: "#people" , icon: faUser, text: "People"},
+        {link: "#notification" , icon: faBell, text: "Notification"},
+        {link: "#direct" , icon: faPaperPlane, text: "Direct"},
+        {link: "#stats" , icon: faChartPie, text: "Stats"},
+        {link: "#setting" , icon: faCog, text: "Setting"},        
+    ];
+
     return (
         <div >  
             
             <div  className="leftSidebar">
-                <div>
+                <div className="picCircle">
                     <Image src={pic1} roundedCircle height="60px" width="60px"/>
                 </div>              
                 <br/>
@@ -47,23 +71,16 @@ class LeftSideBar extends Component {
 
             <div className="leftSidebar1">
             
-                 <a href="#home" color="white" className="a"><FontAwesomeIcon icon={faHome} /> Feed</a>
-                 <br/>
-                 <a href="#home" className="a"><FontAwesomeIcon icon={faCompass} /> Explore</a>
-                 <br/>
-                 <a href="#home" className="a"><FontAwesomeIcon icon={faHashtag} /> Trending tags</a>
-                 <br/>
-                 <a href="#home" className="a"><FontAwesomeIcon icon={faCheckCircle} /> Top Post</a>
-                 <br/>
-                 <a href="#home" className="a"><FontAwesomeIcon icon={faUser} /> People</a>
-                 <br/>
-                 <a href="#home" className="a"><FontAwesomeIcon icon={faBell} /> Notification</a>
-                 <br/>
-                 <a href="#home" className="a"><FontAwesomeIcon icon={faPaperPlane} /> Direct</a>
-                 <br/>
-                 <a href="#home" className="a"><FontAwesomeIcon icon={faChartPie} /> Stats</a>
-                 <br/>
-                 <a href="#home" className="a"><FontAwesomeIcon icon={faCog} /> Settings</a>
+                {   
+                    linkData.map((link) =>
+                    <div>
+                        <a href={link.link} className="a"><FontAwesomeIcon icon={link.icon} /> {link.text}</a>
+                        <br/>
+                        <br/>
+                    </div>    
+                    )
+                } 
+               
             </div>
       </div>
     )

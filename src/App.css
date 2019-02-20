@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -90,3 +92,24 @@ a:hover {
   color: #e75480;
   text-decoration: none;
 }
+
+.picCircle {
+  border: 2px solid;
+  border-color:  #e75480;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.colorGray {
+  color: gray;
+  font-family: 'Josefin Sans', cursive;
+}
+
+.colorBlack{
+  color: 	#505050
+}
+

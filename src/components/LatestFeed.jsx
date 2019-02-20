@@ -31,17 +31,14 @@ class LatestFeed extends Component {
             </Row>
 
             <Row>
-                <Col lg><Image src={pic2} width="100%" height="100%"/></Col>
-                <Col lg><Image src={pic3} width="100%" height="100%"/></Col>
-                <Col lg><Image src={pic4} width="100%" height="100%"/></Col>
-                <Col lg><Image src={pic5} width="100%" height="100%"/></Col>
-            </Row>
-
-            <Row>
-                <Col lg><Image src={pic2} width="100%" height="100%"/></Col>
-                <Col lg><Image src={pic3} width="100%" height="100%"/></Col>
-                <Col lg><Image src={pic4} width="100%" height="100%"/></Col>
-                <Col lg><Image src={pic5} width="100%" height="100%"/></Col>
+                <Col lg={3}><Image src={pic2} width="100%" height="100%"/></Col>
+                <Col lg={3}><Image src={pic3} width="100%" height="100%"/></Col>
+                <Col lg={3}><Image src={pic4} width="100%" height="100%"/></Col>
+                <Col lg={3}><Image src={pic5} width="100%" height="100%"/></Col>
+                <Col lg={3}><Image src={pic2} width="100%" height="100%"/></Col>
+                <Col lg={3}><Image src={pic3} width="100%" height="100%"/></Col>
+                <Col lg={3}><Image src={pic4} width="100%" height="100%"/></Col>
+                <Col lg={3}><Image src={pic5} width="100%" height="100%"/></Col>
             </Row>
 
         </Container>
