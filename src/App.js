@@ -37,22 +37,23 @@ class App extends Component {
       },
 
       pics: [
-          {
-            pic: pic2,
-            impressions: 500
-          },
-          {
-            pic: pic3,
-            impressions: 200
-          },
-          {
-            pic: pic4,
-            impressions: 1000
-          },
-          {
-            pic: pic5,
-            impressions: 800
-          }
+        pic2,pic3,pic4,pic5
+          // {
+          //   pic: pic2,
+          //   impressions: 500
+          // },
+          // {
+          //   pic: pic3,
+          //   impressions: 200
+          // },
+          // {
+          //   pic: pic4,
+          //   impressions: 1000
+          // },
+          // {
+          //   pic: pic5,
+          //   impressions: 800
+          // }
         ],
 
       linkData: [
