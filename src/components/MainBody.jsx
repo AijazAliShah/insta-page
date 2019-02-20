@@ -28,7 +28,7 @@ class MainBody extends Component {
                 <FontAwesomeIcon icon={faThLarge} />
               </div>
             }
-            pics={this.props.userData.pics}
+            pics={this.props.userData.featuredPics}
           />
         </div>
       </div>
