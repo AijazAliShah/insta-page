@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Image, Table} from 'react-bootstrap/';
+import {Image, Table} from 'react-bootstrap';
 import '../App.css';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
