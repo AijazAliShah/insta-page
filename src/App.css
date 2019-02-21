@@ -76,12 +76,8 @@
   height: 100%;
 }
 
-featuredStories {
+.featuredStories {
   flex: 1
-}
-
-latestFeed {
-  flex:1
 }
 
 .a {
@@ -113,3 +109,35 @@ a:hover {
   color: 	#505050
 }
 
+@media only screen and (max-width: 1024px) {
+  .rightContainer {
+    display: none;
+  }
+  .leftContainer {
+    display: none;
+  }
+  .header-content {
+    width: 70%;
+  }
+  .mainContainer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%
+  }
+  .middle {
+    display: none
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .start {
+    display: none
+  }
+}
+
+@media only screen and (min-width: 1024) {
+  .dropdown-sidebar {
+      display: none
+  }
+}

@@ -34,13 +34,13 @@ class RightSideBar extends Component {
           </div>
           <div>
           
-          { this.props.userData.userDetails.address ? 
+          { this.props.userData.userDetails.address && 
             <div>
                 <p className="colorBlack">
                   <b>locations</b>
                 </p>
                 <p>{this.props.userData.userDetails.address}</p>
-            </div> : null
+            </div>
           }
 
            { this.props.userData.userDetails.profession ? 

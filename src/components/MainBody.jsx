@@ -12,13 +12,13 @@ class MainBody extends Component {
           <FeaturedStories
             leftData="Featured Stories"
             rightData="Popular Stories"
-            pics={this.props.userData.pics}
+            pics={this.props.userData.pics.slice().sort((a, b) => (a.impressions > b.impressions ? -1 : 1)).slice(0, 4)}
           />
         </div>
 
         <br />
 
-        <div className="LatestFeed">
+        <div className="featuredStories">
           <FeaturedStories
             leftData="Latest Feed"
             rightData={
@@ -28,7 +28,7 @@ class MainBody extends Component {
                 <FontAwesomeIcon icon={faThLarge} />
               </div>
             }
-            pics={this.props.userData.featuredPics}
+            pics={this.props.userData.pics}
           />
         </div>
       </div>

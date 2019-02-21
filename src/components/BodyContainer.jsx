@@ -8,7 +8,8 @@ class BodyContainer extends Component {
   render() {
     return (
       <div className="bodyContainer">
-        <div className="lefContainer">
+      
+        <div className="leftContainer">
           <LeftSideBar userData={this.props.userData}/>
         </div>
 

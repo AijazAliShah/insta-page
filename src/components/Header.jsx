@@ -1,8 +1,16 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Navbar, NavDropdown, Nav, Form, FormControl, Image } from "react-bootstrap";
+import {
+  Navbar,
+  NavDropdown,
+  Nav,
+  Form,
+  FormControl,
+  Image
+} from "react-bootstrap";
 
 import "../App.css";
+import leftSideBar from'./LeftSideBar';
 
 const logo = require("../img/instagram.png");
 const mic = require("../img/mic.png");
@@ -26,6 +34,17 @@ class header extends Component {
         </div>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+        <div class="dropdown-sidebar">
+          <NavDropdown
+            alignRight
+            className="dropDown"
+            id="basic-nav-dropdown"
+          >
+          <leftSideBar />
+            
+          </NavDropdown>
+        </div>
 
         <div className="start">
           <Nav className="mr-auto">

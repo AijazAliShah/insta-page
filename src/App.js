@@ -25,27 +25,24 @@ const pic9 = require("./img/pic9.jpg");
 const pic10 = require("./img/pic10.jpg");
 const profilePic = require("./img/pic1.jpg");
 
-
 class App extends Component {
-  
-  constructor(props) {
-    super(props);
-      this.state = {
-       fakedata: {
-       userDetails: {
-        name: "Aijaz Ali Shah",
-        picture: profilePic,
-        address: "",
-        noOfPosts: "100",
-        noOfFollowers: "102m",
-        noOfFollowing: "105m",
-        details:
-          "Asjhdas djsda sksad ajshdjhasd ajsdhjhasd asdjhajshd ajshdjasdgsagdkhsagd mashdgksa ahsgdags",
-        profession: "Developer"
-      },
+  constructor() {
+    super();
+    this.state = {
+      fakedata: {
+        userDetails: {
+          name: "Aijaz Ali Shah",
+          picture: profilePic,
+          address: "Karachi, PAK",
+          noOfPosts: "100",
+          noOfFollowers: "102m",
+          noOfFollowing: "105m",
+          details:
+            "Asjhdas djsda sksad ajshdjhasd ajsdhjhasd asdjhajshd ajshdjasdgsagdkhsagd mashdgksa ahsgdags",
+          profession: ""
+        },
 
-      pics: [
-       //pic2,pic3,pic4,pic5
+        pics: [
           {
             pic: pic2,
             impressions: 500
@@ -62,72 +59,50 @@ class App extends Component {
             pic: pic5,
             impressions: 914
           },
-          // {
-          //   pic: pic6,
-          //   impressions: 484
-          // },
-          // {
-          //   pic: pic7,
-          //   impressions: 200
-          // },
-          // {
-          //   pic: pic8,
-          //   impressions: 944
-          // },
-          // {
-          //   pic: pic9,
-          //   impressions: 484
-          // },
-          // {
-          //   pic: pic10,
-          //   impressions: 546
-          // }
-
+          {
+            pic: pic6,
+            impressions: 484
+          },
+          {
+            pic: pic7,
+            impressions: 200
+          },
+          {
+            pic: pic8,
+            impressions: 944
+          },
+          {
+            pic: pic9,
+            impressions: 484
+          },
+          {
+            pic: pic10,
+            impressions: 546
+          }
         ],
 
-      linkData: [
-        { link: "#feed", icon: faHome, text: "feed" },
-        { link: "#Explore", icon: faCompass, text: "Explore" },
-        { link: "#trending_tag", icon: faHashtag, text: "Trending Tag" },
-        { link: "#top_post", icon: faCheckCircle, text: "Top Post" },
-        { link: "#people", icon: faUser, text: "People" },
-        { link: "#notification", icon: faBell, text: "Notification" },
-        { link: "#direct", icon: faPaperPlane, text: "Direct" },
-        { link: "#stats", icon: faChartPie, text: "Stats" },
-        { link: "#setting", icon: faCog, text: "Setting" }
-      ],
-
-      featuredPics:[]
-    }
-  };
-   // this.compareBy.bind(this);
-   // this.sortBy.bind(this);
-
+        linkData: [
+          { link: "#feed", icon: faHome, text: "feed" },
+          { link: "#Explore", icon: faCompass, text: "Explore" },
+          { link: "#trending_tag", icon: faHashtag, text: "Trending Tag" },
+          { link: "#top_post", icon: faCheckCircle, text: "Top Post" },
+          { link: "#people", icon: faUser, text: "People" },
+          { link: "#notification", icon: faBell, text: "Notification" },
+          { link: "#direct", icon: faPaperPlane, text: "Direct" },
+          { link: "#stats", icon: faChartPie, text: "Stats" },
+          { link: "#setting", icon: faCog, text: "Setting" }
+        ]
+      }
+    };
   }
 
-  // componentDidMount() {
-  //   this.sortBy('pics');
-  // }
-
-  // compareBy(key) {
-  //   return function (a, b) {
-  //     if (a[key] < b[key]) return -1;
-  //     if (a[key] > b[key]) return 1;
-  //     return 0;
-  //   };
-  // }
- 
-  // sortBy(key) {
-  //   const { featuredPics } = this.state;
-  //  // featuredPics = [...this.state.pics];
-  //   this.state.featuredPics= this.state.pics.sort(this.compareBy(key));
-  //   this.setState({featuredPics});
-  // }
+  componentDidMount() {
+  }
 
   render() {
     return (
       <div className="App">
-        <Header profilePic={this.state.fakedata.userDetails.picture}/>
+        <Header profilePic={this.state.fakedata.userDetails.picture} />
         <BodyContainer userData={this.state.fakedata} />
       </div>
     );
