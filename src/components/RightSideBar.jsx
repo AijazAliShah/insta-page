@@ -32,27 +32,35 @@ class RightSideBar extends Component {
               {this.props.userData.userDetails.details}
             </p>
           </div>
-
           <div>
+          
+          { this.props.userData.userDetails.address ? 
             <div>
-              <p className="colorBlack">
-                <b>locations</b>
-              </p>
-              <p>{this.props.userData.userDetails.address}</p>
-            </div>
-            <div>
-              <p className="colorBlack">
-                <b>profession</b>
-              </p>
-              <p>{this.props.userData.userDetails.profession}</p>
-            </div>
+                <p className="colorBlack">
+                  <b>locations</b>
+                </p>
+                <p>{this.props.userData.userDetails.address}</p>
+            </div> : null
+          }
 
+           { this.props.userData.userDetails.profession ? 
             <div>
               <p className="colorBlack">
                 <b>profession</b>
               </p>
               <p>{this.props.userData.userDetails.profession}</p>
-            </div>
+            </div> : null
+          }   
+            
+
+          { this.props.userData.userDetails.profession ? 
+            <div>
+              <p className="colorBlack">
+                <b>profession</b>
+              </p>
+              <p>{this.props.userData.userDetails.profession}</p>
+            </div> : null
+          } 
           </div>
         </div>
       </div>

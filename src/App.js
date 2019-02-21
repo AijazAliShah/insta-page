@@ -18,13 +18,21 @@ const pic2 = require("./img/pic2.jpg");
 const pic3 = require("./img/pic3.JPG");
 const pic4 = require("./img/pic4.jpeg");
 const pic5 = require("./img/pic5.jpg");
+const pic6 = require("./img/pic6.jpg");
+const pic7 = require("./img/pic7.jpg");
+const pic8 = require("./img/pic8.jpg");
+const pic9 = require("./img/pic9.jpg");
+const pic10 = require("./img/pic10.jpg");
 const profilePic = require("./img/pic1.jpg");
 
 
 class App extends Component {
-  state = {
-    fakedata: {
-      userDetails: {
+  
+  constructor(props) {
+    super(props);
+      this.state = {
+       fakedata: {
+       userDetails: {
         name: "Aijaz Ali Shah",
         picture: profilePic,
         address: "",
@@ -37,7 +45,44 @@ class App extends Component {
       },
 
       pics: [
-          pic2, pic3,pic4,pic5
+       //pic2,pic3,pic4,pic5
+          {
+            pic: pic2,
+            impressions: 500
+          },
+          {
+            pic: pic3,
+            impressions: 200
+          },
+          {
+            pic: pic4,
+            impressions: 1000
+          },
+          {
+            pic: pic5,
+            impressions: 914
+          },
+          // {
+          //   pic: pic6,
+          //   impressions: 484
+          // },
+          // {
+          //   pic: pic7,
+          //   impressions: 200
+          // },
+          // {
+          //   pic: pic8,
+          //   impressions: 944
+          // },
+          // {
+          //   pic: pic9,
+          //   impressions: 484
+          // },
+          // {
+          //   pic: pic10,
+          //   impressions: 546
+          // }
+
         ],
 
       linkData: [
@@ -50,9 +95,35 @@ class App extends Component {
         { link: "#direct", icon: faPaperPlane, text: "Direct" },
         { link: "#stats", icon: faChartPie, text: "Stats" },
         { link: "#setting", icon: faCog, text: "Setting" }
-      ]
+      ],
+
+      featuredPics:[]
     }
   };
+   // this.compareBy.bind(this);
+   // this.sortBy.bind(this);
+
+  }
+
+  // componentDidMount() {
+  //   this.sortBy('pics');
+  // }
+
+  // compareBy(key) {
+  //   return function (a, b) {
+  //     if (a[key] < b[key]) return -1;
+  //     if (a[key] > b[key]) return 1;
+  //     return 0;
+  //   };
+  // }
+ 
+  // sortBy(key) {
+  //   const { featuredPics } = this.state;
+  //  // featuredPics = [...this.state.pics];
+  //   this.state.featuredPics= this.state.pics.sort(this.compareBy(key));
+  //   this.setState({featuredPics});
+  // }
+
   render() {
     return (
       <div className="App">

@@ -24,8 +24,8 @@ class FeaturedStories extends Component {
         </Row>
             <Row>
               {
-                this.props.pics.map((pic) =>
-                <Col lg><Image src={pic} width="100%" height="100%"/></Col>
+                this.props.pics.map((anObjectMapped, index)  =>
+                <Col lg={3}><Image src={anObjectMapped.pic} width="100%" height="100%"/></Col>
                 )
               }  
             </Row>
