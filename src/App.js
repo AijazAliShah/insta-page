@@ -27,7 +27,7 @@ class App extends Component {
       userDetails: {
         name: "Aijaz Ali Shah",
         picture: profilePic,
-        address: "Karachi, PAK",
+        address: "",
         noOfPosts: "100",
         noOfFollowers: "102m",
         noOfFollowing: "105m",
@@ -37,22 +37,7 @@ class App extends Component {
       },
 
       pics: [
-          {
-            pic: pic2,
-            impressions: 500
-          },
-          {
-            pic: pic3,
-            impressions: 200
-          },
-          {
-            pic: pic4,
-            impressions: 1000
-          },
-          {
-            pic: pic5,
-            impressions: 800
-          }
+          pic2, pic3,pic4,pic5
         ],
 
       linkData: [
