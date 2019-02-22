@@ -10,7 +10,7 @@ import {
 } from "react-bootstrap";
 
 import "../App.css";
-import leftSideBar from'./LeftSideBar';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const logo = require("../img/instagram.png");
 const mic = require("../img/mic.png");
@@ -33,18 +33,22 @@ class header extends Component {
           </Navbar.Brand>
         </div>
 
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          width="100%"
+          height="90%"
+        >
+          <NavDropdown>
+            {this.props.userData.linkData.map((link, index) => (
+              <div key={link.id} style={{paddingBottom: "20px"}}>
+                <NavDropdown.Item href={link.link} className="a" width="100%">
+                  <FontAwesomeIcon icon={link.icon} /> {link.text}
+                </NavDropdown.Item>
 
-        <div class="dropdown-sidebar">
-          <NavDropdown
-            alignRight
-            className="dropDown"
-            id="basic-nav-dropdown"
-          >
-          <leftSideBar />
-            
+              </div>
+            ))}
           </NavDropdown>
-        </div>
+        </Navbar.Toggle>
 
         <div className="start">
           <Nav className="mr-auto">
@@ -101,7 +105,7 @@ class header extends Component {
               <Image
                 roundedCircle
                 className="thumbnail-image"
-                src={this.props.profilePic}
+                src={this.props.userData.userDetails.picture}
                 alt="user pic"
                 width="30"
                 height="30"

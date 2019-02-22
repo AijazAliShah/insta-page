@@ -49,9 +49,9 @@ class LeftSideBar extends Component {
             <div className="leftSidebar1">
             
                 {   
-                    this.props.userData.linkData.map((link) =>
-                    <div>
-                        <a href={link.link} className="a"><FontAwesomeIcon icon={link.icon} /> {link.text}</a>
+                    this.props.userData.linkData.map((link, index) =>
+                    <div key={link.id}>
+                        <a href={link.link}  className="a"><FontAwesomeIcon icon={link.icon} /> {link.text}</a>
                         <br/>
                         <br/>
                     </div>    

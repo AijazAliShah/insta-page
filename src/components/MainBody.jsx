@@ -12,7 +12,8 @@ class MainBody extends Component {
           <FeaturedStories
             leftData="Featured Stories"
             rightData="Popular Stories"
-            pics={this.props.userData.pics.slice().sort((a, b) => (a.impressions > b.impressions ? -1 : 1)).slice(0, 4)}
+            pics={this.props.userData.pics.slice().sort((a, b) => (a.impressions > b.impressions ? -1 : 1)).slice(0, 8)}
+          //  noOfColumn = "2"
           />
         </div>
 
@@ -29,6 +30,7 @@ class MainBody extends Component {
               </div>
             }
             pics={this.props.userData.pics}
+           // noOfColumn = "1"
           />
         </div>
       </div>

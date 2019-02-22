@@ -13,9 +13,13 @@
     "react-bootstrap": "^1.0.0-beta.5",
     "react-data-sort": "^1.2.0",
     "react-dom": "^16.8.2",
+    "react-flexi-image-grid": "^1.0.6",
+    "react-grid-gallery": "^0.5.3",
+    "react-images": "^0.5.19",
     "react-responsive": "^6.1.1",
     "react-script": "^2.0.5",
-    "react-scripts": "2.1.5"
+    "react-scripts": "2.1.5",
+    "reactstrap": "^7.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
