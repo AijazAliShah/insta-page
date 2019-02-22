@@ -49,7 +49,7 @@ class FeaturedStories extends Component {
           onClickNext={this.gotoNextLightboxImage}
           onClose={this.closeLightbox}
         /> */}
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-between" style={{paddingLeft: "10px", paddingRight: "10px"}}>
               <h3>{this.props.leftData}</h3>
               <h6>{this.props.rightData}</h6>
             </div>
