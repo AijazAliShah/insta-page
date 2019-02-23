@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Container, Row, Col, Image} from 'react-bootstrap';
 import {FlexiImageGrid} from "react-flexi-image-grid";
 import Lightbox from 'react-images';
+import Gallery from 'react-grid-gallery';
 
 class FeaturedStories extends Component {
   
@@ -12,6 +13,13 @@ class FeaturedStories extends Component {
 
 };
 
+//  IMAGESS =this.props.pics.map((pic)  => ({
+//   src: pic.pic,
+//   thumbnail: pic.pic,
+//   thumbnailWidth: 320,
+//   thumbnailHeight: 174
+// }))
+
   render() {
 
     return (
@@ -21,13 +29,20 @@ class FeaturedStories extends Component {
               <h3>{this.props.leftData}</h3>
               <h6>{this.props.rightData}</h6>
             </div>
-        <FlexiImageGrid images={this.props.pics.map((pic)  => ({
+
+          <Gallery images={this.props.pics.map((pic)  => ({
+            src: pic.pic,
+            thumbnail: pic.pic,
+            thumbnailWidth: 320,
+            thumbnailHeight: 174
+          }))}/>     
+        {/* <FlexiImageGrid images={this.props.pics.map((pic)  => ({
           src: pic.pic,
           className: "pic"+pic.id
         }))}
         numberOfColumns={3}
         onClick={this.onClickHandler}
-        />
+        /> */}
 
       </div>
     )
